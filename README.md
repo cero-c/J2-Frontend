@@ -8,44 +8,45 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Jij
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
-
+  Ceren Coban
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
-
-
 
 
 
 ## Je website
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Uitwerken voor kick-off werkgroep</summary>
 
+   https://www.universiteitvannederland.nl/ Home pagina & Doneren pagina
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home pagina
+    <img src="readme-images/w1-opd-0-1.png" width="375px" alt="Home pagina bevat een hamburger menu, toont laaste aflevering en introduceert de missie van de Universiteit van Nederland. ">
+    <img src="readme-images/w1-opd-0-2.png" width="375px" alt="Er is een inputveld om voor de nieuwsbrief in te schrijven. Dan gaat verder nieuws, podcasts..">
+    <img src="readme-images/w1-opd-0-3.png" width="375px" alt="Een overzicht van partners, logo's en ondersteunde organisatie. Te klein afbeeldingen">
+    <img src="readme-images/w1-opd-0-4.png" width="375px" alt="Einde van de home pagina staat weer een inputveld voor de nieuwsbrief en link naar social media acoounts">
+ :
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
+  Doneren pagina
+    <img src="readme-images/w1-opd-0-5.png" width="375px" alt="Een donatiepagina: je ziet een uitleg van het belang van donaties en een call-to-action met Doneer knop">
+    <img src="readme-images/w1-opd-0-6.png" width="375px" alt="Transparante uitleg over hoe donaties worden besteed. Tabelachtige presentatie">
+    <img src="readme-images/w1-opd-0-7.png" width="375px" alt="Interactieve donatiemodule waar gebruikers eenmalig, maandelijks of jaarlijks een bedrag kunnen kiezen. Inclusief formulier voor persoonlijke gegevens en betaaloptie, bevat CTA knop">
+    
 </details>
 
 
@@ -56,11 +57,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  1. De website ondersteunt geen hoge contrast of licht/donkere modus.
+  2. Kleur wordt soms als enige manier gebruikt om informatie over te brengen.
+  3. Hoewel de website geen heftige animaties bevat, zou het fijn zijn om gebruik van prefers-reduced-motion te maken.
+  4. In theorie worden er een H1 en meerdere H2 tags gebruik gemaakt, maar h1 en h2 hebben dezelfde functie en er zijn geen verschil ivm de functies. 
+  5. Podcasts hebben geen ondertiteling, videos wel. 
+  6. Niet alle interactieve elementen hebben een duidelijke focus-staat.
+  7. Geen skip link (ga naar de inhoud knop)
+  8. Focusstijl is niet altijd zichtbaar. 
+  9. Horizontaal scrollen is vermijderd, maar je ziet nog steeds een beetje witte ruimte.
+  10. Afbeeldingen hebben geen alternatieve tekst.
 
 </details>
-
-
 
 ## Breakdownschets (week 1)
 
