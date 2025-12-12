@@ -9,209 +9,301 @@
 	<title>Ceren-Universiteit Van Nederland</title>
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="images/logo.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
 </head>
 
+
 <body>
-	<header>
-		<h1>Universiteit Van Nederland</h1>
-		<a href="home.html"><img src="images/logo.png"
-				alt="Logo van Universiteit van Nederland: Twee donkergroene, simpele vormen die samen lijken op een kleine u en n. Strak en heel minimalistisch. Het lijkt op een u, en als je het omdraait zie je er een n in"></a>
+	    <header>
+        <!-- svg moet als code toevoegen aan de HTML -->
+        <a href="home.html"><img src="images/logo.png"
+                alt="Logo van Universiteit van Nederland: Twee donkergroene, simpele vormen die samen lijken op een kleine u en n. Strak en heel minimalistisch. Het lijkt op een u, en als je het omdraait zie je er een n in">
+        </a>
+        <h1>Universiteit <span>Van Nederland</span></h1>
+        <div>
+            <ul>
+                <li aria-label="menu">
+                    <button aria-expanded="false" aria-label="hamburger menu">
+                        menu
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </li>
+            </ul>
+            <nav> <!--hamburger menu opdracht: https://codepen.io/shooft/pen/JjQLVeB-->
+                <ul>
+                    <li><a href="videos.html">Video's</a></li>
+                    <li><a href="podcasts.html">Podcasts</a></li>
+                    <li><a href="overons.html">Over Ons</a></li>
+                    <li><a href="Nieuws.html">Nieuws</a></li>
+                    <li><a href="index.html" class="active">Doneren</a></li>
+                    <li><a href="Manifest.html">Manifest</a></li>
+					<li><a href="engels.html" lang="en">English <img lang="en" src="images/uk-icon.png"
+                        alt="for English"></a></li>
+                </ul>
+            </nav>
+        </div>
 
-		<nav>
-			<ul>
-				<li><a href="videos.html">Video's</a></li>
-				<li><a href="podcasts.html">Podcasts</a></li>
-				<li><a href="overons.html">Over Ons</a></li>
-				<li><a href="Nieuws.html">Nieuws</a></li>
-				<li><a href="Manifest.html">Manifest</a></li>
-				<li><a href="engels.html" lang="en">English</a><img lang="en" src="images/uk-icon.png"
-						alt="for English"></li>
-			</ul>
-		</nav>
-	</header>
+    </header>
+
+
 	<main>
-		<section>
+		<section aria-label="aandacht">
+			<video autoplay muted> <source src="images/doneer-video.mp4" type="video/mp4"></video>
 			<h2>Steun de Universiteit Van Nederland voor <span>&euro; 10</span> per jaar</h2>
-			<p>Ben jij ook voor een samenleving waarin iedereen gratis kan leren van Nederlandse topwetenschappers? Met
-				jouw donatie aan de Universiteit van Nederland maken we dit mogelijk!</p>
-			<button type="button">Doneer!</button>
+			<p>Ben jij ook voor een samenleving waarin iedereen gratis kan leren van Nederlandse topwetenschappers? Met jouw donatie aan de Universiteit van Nederland maken we dit mogelijk!
+				<span><button type="button" onclick="location.href='#doneer'">Doneer!</button></span>
+			</p>
 		</section>
-		<section>
-			<h2>Dit is hoe we jouw &euro; 10,- uitgeven:</h2>
+
+		<figure>
 			<table>
-				<tr>
-					<th>
-						<h3>1. Loonkosten</h3>
-					</th>
-					<td>&euro; 4,50</td>
-					<td>
-						<details>
-							<summary></summary>
-							Team van onafhankelijke wetenschaps- redacteuren gespecialiseerd om ingewikkelde materie op een begrijpbare manier uit te leggen.
-						</details>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<h3>2. Video&Podcasts opnames</h3>
-					</th>
-					<td>&euro; 4,00</td>
-					<td>
-						<details>
-							<summary></summary>
-							Kosten voor het filmen, monteren, planning en animaties
-						</details>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<h3>3. Kantoor</h3>
-					</th>
-					<td>&euro; 0,42</td>
-					<td>
-						<details>
-							<summary></summary>
-							De huur, bureau's, laptops, kantoorkosten en paperclips
-						</details>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<h3>4. Reiskosten</h3>
-					</th>
-					<td>&euro; 0,05</td>
-					<td>
-						<details>
-							<summary></summary>
-							We reizen voornamelijk met de fiets, trein en deel-auto's
-						</details>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<h3>5.Distributie-kosten</h3>
-					</th>
-					<td>&euro; 0,25</td>
-					<td>
-						<details>
-							<summary></summary>
-							99% van ons bereik is organisch. Soms testen we nieuwe manieren om het brede publiek te bereiken
-						</details>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<h3>6. Online tooling</h3>
-					</th>
-					<td>&euro; 0,07</td>
-					<td>
-						<details>
-							<summary></summary>
-							Onze website, hosting, en de online tools de we gebruiken om zo efficiënt mogelijk te werken
-						</details>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<h3>7. Overig</h3>
-					</th>
-					<td>&euro; 0,21</td>
-					<td>
-						<details>
-							<summary></summary>
-							Overige kosten voor de dagelijkse bedrijfsvoering zoals accountants, bankkosten en verzekeringskosten
-						</details>
-					</td>
-				</tr>
+				<caption>Dit is hoe we jouw <span> &euro; 10,- </span> uitgeven:</caption>
+				<tfoot>
+					<tr>
+						<th>
+							Totaal
+						</th>
+						<td colspan="2">&euro; 9,50</td>
+					</tr>
+					<tr>
+						<th>Over</th>
+						<td colspan="2">&euro; 0,50</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<th>
+							1. Loonkosten
+						</th>
+						<td>&euro; 4,50</td>
+						<td>
+							<button><img src="images/table-button.svg" alt="klik hier om de details te lezen"></button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							Team van onafhankelijke wetenschaps-redacteuren gespecialiseerd om ingewikkelde materie op een begrijpbare manier uit te leggen.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							2. Video & Podcasts opnames
+						</th>
+						<td>&euro; 4,00</td>
+						<td>
+							<button><img src="images/table-button.svg" alt="klik hier om de details te lezen"></button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							Kosten voor het filmen, monteren, planning en animaties.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							3. Kantoor
+						</th>
+						<td>&euro; 0,42</td>
+						<td>
+							<button><img src="images/table-button.svg" alt="klik hier om de details te lezen"></button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							De huur, bureau's, laptops, kantoorkosten en paperclips.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							4. Reiskosten
+						</th>
+						<td>&euro; 0,05</td>
+						<td>
+							<button><img src="images/table-button.svg" alt="klik hier om de details te lezen"></button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							We reizen voornamelijk met de fiets, trein en deel-auto's.
+						</td>
+					</tr>
+				
+					<tr>
+						<th>
+							5.Distributie-kosten
+						</th>
+						<td>&euro; 0,25</td>
+						<td>
+							<button><img src="images/table-button.svg" alt="klik hier om de details te lezen"></button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							99% van ons bereik is organisch. Soms testen we nieuwe manieren om het brede publiek te bereiken.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							6. Online tooling
+						</th>
+						<td>&euro; 0,07</td>
+						<td>
+							<button><img src="images/table-button.svg" alt="klik hier om de details te lezen"></button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							Onze website, hosting, en de online tools de we gebruiken om zo efficiënt mogelijk te werken.
+						</td>
+					</tr>
+			
+					<tr>
+						<th>
+							7. Overig
+						</th>
+						<td>&euro; 0,21</td>
+						<td>
+							<button><img src="images/table-button.svg" alt="klik hier om de details te lezen"></button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							Overige kosten voor de dagelijkse bedrijfsvoering zoals accountants, bankkosten en verzekeringskosten.
+						</td>
+					</tr>
+				</tbody>
 			</table>
-			<table>
-				<tr>
-					<th>
-						Totaal
-					</th>
-					<td>&euro; 9,50</td>
-				</tr>
-				<tr>
-					<th>Over</th>
-					<td>&euro; 0,50</td>
-				</tr>
-				<p>*Met deze 0,50 financieren we de ontwikkeling van nieuwe projecten die bijdragen aan het toegankelijk
-					maken van wetenschap. Jouw bijdrage zorgt ervoor dat we dit steeds vaker kunnen doen en blijven
-					innoveren</p>
-			</table>
-		</section>
-		<section>
-			<h2>Doneer</h2>
-			<h3>Kies je bedrag</h3>
+			<figcaption>
+				*Met deze 0,50 financieren we de ontwikkeling van nieuwe projecten die bijdragen aan het
+				toegankelijk maken van wetenschap. Jouw bijdrage zorgt ervoor dat we dit steeds vaker kunnen doen en
+				blijven innoveren.
+			</figcaption>
+		</figure>
+
+		<section aria-label="aandacht">
+			<h2>Doneer!</h2>
+			<p>Kies je bedrag</p>
 			<ul>
-				<li><button type="button">Eenmalig</button></li>
-				<li><button type="button">Maandelijks</button></li>
-				<li><button type="button">Jaarlijks</button></li>
+				<li><label for="eenmalig"><input type="radio" name="frequency" id="eenmalig">Eenmalig</label>
+				</li>
+				<li><label for="maandelijks"><input type="radio" name="frequency" id="maandelijks">Maandelijks</label>
+				</li>
+				<li><label for="jaarlijks"><input type="radio" name="frequency" id="jaarlijks">Jaarlijks</label>
+				</li>
 			</ul>
-			<h4>Bedrag</h4>
+
+			<p>Bedrag</p>
 			<ol>
-				<li><button type="button">&euro; 10</button></li>
-				<li><button type="button">&euro; 25</button></li>
-				<li><button type="button">&euro; 50</button></li>
-				<li><button type="button">&euro; 100</button></li>
-				<li><button type="button">Anders</button></li>
+				<li>
+					<label for="tien"><input type="radio" name="bedrag" id="tien">&euro; 10</label>
+				</li>
+				<li>
+					<label for="vijfentwintig"><input type="radio" name="bedrag" id="vijfentwintig">&euro; 25</label>
+				</li>
+				<li>
+					<label for="vijftig"><input type="radio" name="bedrag" id="vijftig">&euro; 50</label>
+				</li>
+				<li>
+					<label for="hondred"><input type="radio" name="bedrag" id="hondred">&euro; 100</label>
+				</li>
+				<li>
+					<label for="anders"><input type="radio" name="bedrag" id="anders">Anders</label>
+				</li>
 			</ol>
-			<input type="text" placeholder="Voornaam">
-			<input type="text" placeholder="Achternaam">
-			<input type="email" placeholder="Emailadres">
+
+		
 			<div>
-				<input type="checkbox">
-				<p>Anoniem doneren</p>
+				<label for="name">Voornaam</label>
+				<input type="text" name="name" id="name">
+				
+				<label for="surname">Achternaam</label>
+				<input type="text" name="surname" id="surname">
+				
+				<label for="email">Emailadres </label>
+				<input type="email" name="email" id="email">
+			
+				<label for="anoniem"><input type="checkbox" id="anoniem">Anoniem doneren
+				</label>
 			</div>
+
 			<button>Doneer</button>
-			<p>Doneer veilig via:</p>
-			<a href="https://whydonate.com/nl/" target="_blank">whydonate</a>
-		</section>
+			<div id="lasers" class="lasers-hidden">
+				<p class="heaven-text">Heaven guaranteed!</p>
+				<div class="laser-beam"></div>
+				<div class="laser-beam red"></div>
+				<div class="laser-beam purple"></div>
+				<div class="laser-beam green"></div>
+			</div>
+			<!--BRON lasers:https://codepen.io/Evolution/pen/poGOyM?editors=0110 -->
+			<p>Doneer veilig via: <a href="https://whydonate.com/nl/" target="_blank">whydonate</a></p>
 
-		<p>Je donatie draagt direct bij aan bestaande én nieuwe programma's over wetenschap. Hoe meer mensen ons
-			steunen, hoe meer verschil we kunnen maken. Samen geven we iedereen toegang tot de briljante lessen van
-			topwetenschappers. <strong>En daar doen we het voor.</strong></p>
-		<section>
-			<h3>Is mijn gift aftrekbaar voor de belasting?</h3>
-			<p>Universiteit van Nederland heeft een ANBI status. Giften aan een ANBI zijn aftrekbaar voor de
-				belasting. <strong> Lees hier meer over de geldende regels voor belastingaftrek.</strong></p>
-			<a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/gift-aftrekken"
-			target="_blankd">
+			<p>Je donatie draagt direct bij aan bestaande én nieuwe programma's over wetenschap. Hoe meer mensen ons steunen, hoe meer verschil we kunnen maken. Samen geven we iedereen toegang tot de briljante lessen van topwetenschappers. <strong>En daar doen we het voor.</strong>
+			</p>
+			<div>
+				<img src="images/anbi.svg" alt="logo van anbi">
+				<h3>Is mijn gift aftrekbaar voor de belasting?</h3>
+				<p>
+					Universiteit van Nederland heeft een ANBI status. Giften aan een ANBI zijn aftrekbaar voor de belasting. <strong> <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/gift-aftrekken" target="_blankd"> Lees hier meer over de geldende regels voor belastingaftrek.</strong></a>
+				</p>
+			</div>
 		</section>
-	
-
 	</main>
+
 	<footer>
-		<section>
+		<div>
 			<h2>Schrijf je in voor de nieuwsbrief</h2>
-			<a href="https://universiteitvannederland.substack.com/"></a>
-		</section>
+			<a href="https://universiteitvannederland.substack.com/">Inschrijven</a>
+		</div>
 		<section>
+			<h2>Contact</h2>
 			<p>Je kunt ons vinden op:</p>
 			<nav>
 				<ul>
 					<li>
 						<a href="https://open.spotify.com/" target="_blank">
-							<img src="images/spotify.png" alt="Spotify">
+							<img src="images/Spotify_svg.svg" alt="Spotify">
 						</a>
+					</li>
+					<li>
 						<a href="https://www.youtube.com/@UniversiteitvanNL" target="_blank">
-							<img src="images/youtube.png" alt="Youtube">
+							<img src="images/youtube-svg.svg" alt="Youtube">
 						</a>
+					</li>
+					<li>
 						<a href="https://www.facebook.com/UniversiteitVanNederland/?locale=tr_TR" target="_blank">
-							<img src="images/facebook.png" alt="Faceboook">
+							<img src="images/facebook-svg.svg" alt="Faceboook">
 						</a>
+					</li>
+					<li>
 						<a href="https://www.tiktok.com/@universiteitnl" target="_blank">
-							<img src="images/tiktok.png" alt="Tiktok">
+							<img src="images/tiktok-svg-zwart.svg" alt="Tiktok">
 						</a>
+
+					</li>
+					<li>
 						<a href="https://x.com/universiteitNL" target="_blank">
-							<img src="images/twitter.png" alt="Twitter">
+							<img src="images/new-twitter-svg.svg" alt="Twitter">
 						</a>
+					</li>
+					<li>
 						<a href="https://www.instagram.com/universiteitNL/" target="_blank">
-							<img src="images/instagram.png" alt="Instagram">
+							<img src="images/instagram-svg.svg" alt="Instagram">
 						</a>
 					</li>
 				</ul>
 			</nav>
+			<p>Heb je vragen?</p>
+			<a href="info@universiteitvannederland.nl">info@universiteitvannederland.nl</a>
+		</section>
+
+		<section>
+			<h2>Extra's</h2>
 			<nav>
 				<ul>
 					<li><a href="https://news.universiteitvannederland.nl/assets/">Persmap</a></li>
@@ -224,10 +316,11 @@
 					<li><a href="https://uvnl.homerun.co/">Vacatures</a></li>
 				</ul>
 			</nav>
-			<p>Heb je vragen?</p>
-			<a href="info@universiteitvannederland.nl">info@universiteitvannederland.nl</a>
 		</section>
+
 	</footer>
+
+
 	<script defer src="scripts/script.js"></script>
 </body>
 
