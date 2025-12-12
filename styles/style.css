@@ -1330,6 +1330,7 @@ ol li:has(input:checked) {
 		grid-column: 1/-1;
 		grid-row: 2;
 		max-width: 60%;
+		margin-top: 6rem;
 	}
 
 	main:has(table) section:first-child p {
