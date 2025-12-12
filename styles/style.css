@@ -1311,7 +1311,7 @@ ol li:has(input:checked) {
 		grid-template-columns: auto auto;
 		column-gap: 2em;
 		background-image: url('../images/background-circle-doneer.svg');
-		background-position: -20% -1%;
+		background-position: -35% -1%;
 		background-repeat: no-repeat;
 		width: 85%;
 		margin-bottom: 2rem;
